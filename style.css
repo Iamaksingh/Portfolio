@@ -1,0 +1,110 @@
+body {
+    background: rgb(226, 241, 231);
+    color: rgb(36, 54, 66);
+}
+
+.container {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* navigation bar */
+.navigation_bar {
+    display: flex;
+    margin-right: 20px;
+    max-width: fit-content;
+    margin-left: auto;
+    padding: 4px;
+    gap: 5px;
+}
+
+.nav_buttons {
+    background-color: transparent;
+    color: rgb(56, 116, 120);
+    font-size: large;
+    border: 0px;
+    width: 80px;
+    height: 70px;
+    border-radius: 10px;
+}
+
+.nav_buttons:hover {
+    background-color: rgb(36, 54, 66);
+    font-size: large;
+    color: white;
+    border: 0px;
+    width: 80px;
+    height: 70px;
+    border-radius: 10px;
+}
+
+
+/* main content for home */
+.main_content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+    gap: 10px;
+}
+
+/* text div */
+.text_div{
+    align-items: center;
+    display: block; 
+    height: auto;
+    width: 600px;
+    margin-top: 100px; /* Push text lower */
+}
+
+.name{
+    display:flex;
+    margin:50px;
+    gap:30px;
+}
+
+.name_intro{
+    font-size: 40px;
+    color: rgb(36, 54, 66);
+}
+
+.main_name{
+    color: rgb(36, 54, 66);
+    font-size: 80px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/* intro about me */
+.content{
+    justify-content: center;
+    text-align: left;
+    margin:50px;
+    max-width: 500px;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+/* Fade-in animation keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0; 
+        transform: translateY(20px); 
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.image_div{
+    height: 650px;
+    width: 600px;
+}
+
+/* image for home */
+.image {
+    height: 650px;
+    width: 550px;
+    margin-left: 20px;
+}
